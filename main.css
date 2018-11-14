@@ -37,26 +37,26 @@ h4 + div > div {
 }
 
 /* #9 */
-h4 + div > div + h4 > div {
+.parent :nth-child(3) {
     color: blue;
 }
+/* #11 */
+.parent :nth-child(4) {
+    color: black;
+    background-color: blue;
+}
+
 /* #10 */
 h4 ~ div :nth-child(2) {
     background-color: red;
 }
-/* #11 */
-h4 ~ div :nth-child(4) {
-    background-color: blue;
-}
+
 /* #12 */
 .grandparent > h4 {
     border: 1px solid black;
     border-radius: 25px;
 }
-/* .grandparent :nth-child(1) {
-    border: 1px solid black;
-    border-radius: 25px;
-} */
+
 /* 13 */
 .promo {
     font: bold;
