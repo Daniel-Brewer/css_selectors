@@ -1,21 +1,25 @@
+/* styling header - # 1 */
 header {
     
     border-style: solid;
     border-width: 1px;
     border-color: goldenrod;
 }
-
-/* nav > div {
-    display: flex;
-    justify-content: space-between;
-} */
+/* styling #2 */
 header > ul {
     display: flex;
     justify-content: space-between;   
 }
-
+/* #4 */
 .disabled {
     color: gray;
+}
+span.disabled {
+    color: purple;
+}
+/* 5 */
+.active {
+    color: yellow;
 }
 
 
@@ -26,14 +30,39 @@ ul {
     padding: 0;
 }
 
-div > div {
+
+/* #8 */
+h4 + div > div {
+    color: red;
+}
+
+/* #9 */
+h4 + div > div + h4 > div {
+    color: blue;
+}
+/* #10 */
+h4 ~ div :nth-child(2) {
     background-color: red;
 }
-
-h4 > div {
+/* #11 */
+h4 ~ div :nth-child(4) {
     background-color: blue;
 }
-
-div > h4 {
-    background-color: blue;
+/* #12 */
+.grandparent > h4 {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+/* .grandparent :nth-child(1) {
+    border: 1px solid black;
+    border-radius: 25px;
+} */
+/* 13 */
+.promo {
+    font: bold;
+    color: gold;
+}
+/* #14 */
+input[type=text] {
+    height: 25px;
 }
